@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/24 14:39:39 by maeskhai         ###   ########.fr       */
+/*   Created: 2024/10/24 13:53:02 by maeskhai          #+#    #+#             */
+/*   Updated: 2024/10/24 14:46:10 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./libft.h"
+
 #include <stdio.h>
 
-int	main(void)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char ds[10] = "hello";
-	char sr[10] = "wrold";
-	ft_memcpy(ds, sr, 2);
-	printf("%s\n", ds);
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		*((unsigned char *)dst + i) = *((const unsigned char *)src + i);
+		i++;
+	}
+	return (dst);
 }

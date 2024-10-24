@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/24 14:39:39 by maeskhai         ###   ########.fr       */
+/*   Created: 2024/10/24 13:28:19 by maeskhai          #+#    #+#             */
+/*   Updated: 2024/10/24 14:54:32 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./libft.h"
-#include <stdio.h>
 
-int	main(void)
+void	ft_bzero(void *s, size_t n)
 {
-	char ds[10] = "hello";
-	char sr[10] = "wrold";
-	ft_memcpy(ds, sr, 2);
-	printf("%s\n", ds);
+    ft_memset(s, 0, n);
 }
