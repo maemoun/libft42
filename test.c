@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/24 14:39:39 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/24 17:50:20 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,5 @@ int	main(void)
 {
 	char ds[10] = "hello";
 	char sr[10] = "wrold";
-	ft_memcpy(ds, sr, 2);
-	printf("%s\n", ds);
+	printf("%zu\n", ft_strlcpy(ds, sr, 3));
 }
