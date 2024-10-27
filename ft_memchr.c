@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/26 12:41:20 by maeskhai         ###   ########.fr       */
+/*   Created: 2024/10/26 10:57:52 by maeskhai          #+#    #+#             */
+/*   Updated: 2024/10/26 12:39:42 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
-#include <stdio.h>
+#include "libft.h"
 
-int	main(void)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char d[10] = "helloA";
-
-	printf("%s\n", ft_memchr(d, 'A', 6));
+	while (n--)
+	{
+		if (*(unsigned char *)s == (unsigned char)c)
+			return ((void *)s);
+		s++;
+	}
+	return (0);
 }

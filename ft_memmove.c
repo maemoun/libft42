@@ -1,21 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/26 12:41:20 by maeskhai         ###   ########.fr       */
+/*   Created: 2024/10/26 10:01:22 by maeskhai          #+#    #+#             */
+/*   Updated: 2024/10/26 10:32:45 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./libft.h"
-#include <stdio.h>
 
-int	main(void)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char d[10] = "helloA";
+	char		*d;
+	const char	*s;
+	size_t		i;
 
-	printf("%s\n", ft_memchr(d, 'A', 6));
+	d = (char *)dst;
+	s = (const char *)src;
+	if (d > s)
+	{
+		i = len - 1;
+		while (len--)
+		{
+			d[len] = s[len];
+		}
+	}
+	else
+	{
+		i = 0;
+		while (i < len)
+		{
+			d[i] = s[i];
+			i++;
+		}
+	}
+	return (dst);
 }

@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/26 12:41:20 by maeskhai         ###   ########.fr       */
+/*   Created: 2024/10/26 13:24:02 by maeskhai          #+#    #+#             */
+/*   Updated: 2024/10/26 13:29:10 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
-#include <stdio.h>
+#include "libft.h"
 
-int	main(void)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char d[10] = "helloA";
-
-	printf("%s\n", ft_memchr(d, 'A', 6));
+	
 }
