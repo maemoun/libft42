@@ -6,11 +6,11 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 15:09:27 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/23 15:50:46 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/27 10:37:30 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

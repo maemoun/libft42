@@ -6,11 +6,11 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:02 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/24 14:46:10 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/27 10:36:56 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
+#include "libft.h"
 
 #include <stdio.h>
 

@@ -6,16 +6,14 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/26 12:41:20 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/28 10:41:42 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
+#include "libft.h"
 #include <stdio.h>
 
 int	main(void)
-{
-	char d[10] = "helloA";
-
-	printf("%s\n", ft_memchr(d, 'A', 6));
+{	
+	printf("%s\n", ft_itoa(2147483648));
 }
