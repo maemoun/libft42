@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 10:19:45 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/28 11:17:16 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/28 14:57:59 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,29 @@
 char	*ft_itoa(int n)
 {
 	char	*str;
-	int		nb;
+	long		nb;
 	int 	len;
 
+	str = NULL;
 	len = 0;
 	nb = n;
-	if (nb < 0)
+	if (nb == -2147483648)
+	{
+		str[0] = '-';
+		str[1] = '2';
+		nb = 147483648;
+		while (n > 1)
+		{
+			str[len] = (nb % 10) + 48;
+			nb = nb / 10;
+			len--;
+		}
+		return (str);
+	}
+	else if (nb < 0)
 	{
 		len = 1;
-		nb = -nb;
+		nb = nb * -1;
 	}
 	else if (nb == 0)
 		len = 1;
@@ -39,20 +53,6 @@ char	*ft_itoa(int n)
 		return (NULL);
 	str[len] = '\0';
 	len--;
-	if (n == -2147483648)
-	{
-		str[0] = '-';
-		str[1] = '2';
-		str[2] = '1';
-		str[3] = '4';
-		str[4] = '7';
-		str[5] = '4';
-		str[6] = '8';
-		str[7] = '3';
-		str[8] = '6';
-		str[9] = '4';
-		str[10] = '8';
-	}
 	if (n < 0)
 	{
 		str[0] = '-';
@@ -67,11 +67,4 @@ char	*ft_itoa(int n)
 		len--;
 	}
 	return (str);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{	
-	printf("%s\n", ft_itoa(-2147483649));
 }
