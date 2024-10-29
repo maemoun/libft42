@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/29 19:29:00 by maeskhai         ###   ########.fr       */
+/*   Created: 2024/10/29 08:37:38 by maeskhai          #+#    #+#             */
+/*   Updated: 2024/10/29 08:45:39 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	main(void)
-{	
-	char *s = "abcd";
-	ft_putendl_fd(s, 1);
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
 }

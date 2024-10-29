@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 08:18:59 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/28 08:25:56 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/29 11:34:07 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void *str;
+	void	*str;
 
 	str = malloc(count * size);
 	if (str == NULL)

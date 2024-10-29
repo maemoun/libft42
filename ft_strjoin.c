@@ -1,20 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test.c                                             :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 10:28:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/29 19:29:00 by maeskhai         ###   ########.fr       */
+/*   Created: 2024/10/29 19:34:30 by maeskhai          #+#    #+#             */
+/*   Updated: 2024/10/29 19:36:58 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
-
-int	main(void)
-{	
-	char *s = "abcd";
-	ft_putendl_fd(s, 1);
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	
 }
