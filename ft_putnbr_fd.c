@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:21:25 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/29 11:45:26 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/30 12:17:30 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,4 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd((n + 48), fd);
 }
+										
