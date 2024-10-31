@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 10:19:45 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/31 16:33:23 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/31 19:01:25 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int	ft_len(int n)
+static int	ft_len(int n)
 {
 	int	i;
 
