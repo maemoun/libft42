@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 10:21:25 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/30 12:17:30 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:27:07 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		ft_putchar_fd('-', fd);
 		n *= -1;
-		ft_putnbr_fd(n , fd);
+		ft_putnbr_fd(n, fd);
 	}
 	else if (n > 9)
 	{
@@ -30,4 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd((n + 48), fd);
 }
-										

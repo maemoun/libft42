@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 13:53:02 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/27 10:36:56 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/31 16:38:39 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	while (i < n)
 	{
 		*((unsigned char *)dst + i) = *((const unsigned char *)src + i);

@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:51:28 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/27 10:36:40 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:56:25 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return (c);
+		return (1);
 	return (0);
 }
