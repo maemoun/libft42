@@ -1,52 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 19:34:30 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/11/04 11:38:50 by maeskhai         ###   ########.fr       */
+/*   Created: 2024/10/31 19:03:11 by maeskhai          #+#    #+#             */
+/*   Updated: 2024/10/31 19:15:43 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_join(char *str, char const *s2)
+static int	ft_search(char const *set, char c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (s2[i])
+	while (set[i])
 	{
-		str[i] = s2[i];
+		if (set[i] == c)
+			return (1);
 		i++;
 	}
-	return (str);
+	return (0);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
-	size_t	j;
-	size_t	len;
 	char	*str;
+	int		i;
+	int		j;
+	int		size_str;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
-	len = ft_strlen(s1) + ft_strlen(s2);
 	i = 0;
-	j = 0;
-	str = malloc(len + 1);
-	if (str == NULL)
-		return (NULL);
-	while (s1[i])
+	j = ft_strlen(s1) - 1;
+	while (s1[i] && ft_search(set, s1[i]))
 	{
-		str[j] = s1[i];
 		i++;
-		j++;
 	}
-	ft_join(str + j, s2);
-	str[len] = '\0';
+	while (j >= 0 && ft_search(set, s1[j]))
+	{
+		j--;
+	}
+	size_str = (j - i) + 1;
+	str = ft_substr(s1, i, size_str);
 	return (str);
 }

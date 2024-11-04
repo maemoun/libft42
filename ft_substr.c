@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 10:43:44 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/31 16:48:03 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/04 10:31:22 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*str;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	if (start >= (unsigned int)ft_strlen(s))
 		return (ft_strdup(""));
 	if (len > ft_strlen(s) - start)
