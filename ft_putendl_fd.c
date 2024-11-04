@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:15:51 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/29 19:28:26 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/04 13:18:41 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
+	if (!s || fd < 0)
+		return ;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);

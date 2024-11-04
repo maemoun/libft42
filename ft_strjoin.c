@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 19:34:30 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/11/04 11:38:50 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/04 13:30:22 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	len;
 	char	*str;
 
-	if (!s1)
+	if (!s1 && s2)
+		return ((char *)s2);
+	if (!s2 && s1)
+		return ((char *)s1);
+	if (!s1 && !s2)
 		return (NULL);
 	len = ft_strlen(s1) + ft_strlen(s2);
 	i = 0;
@@ -42,8 +46,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	while (s1[i])
 	{
-		str[j] = s1[i];
-		i++;
+		str[j] = s1[i++];
 		j++;
 	}
 	ft_join(str + j, s2);
