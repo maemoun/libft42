@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:08:58 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/27 10:36:17 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/05 13:39:33 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,29 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	sign;
-	int	total;
+	int			sign;
+	long long	tot;
+	long long	check;
 
-	i = 0;
 	sign = 1;
-	total = 0;
-	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
-		i++;
-	if (nptr[i] == '-' || nptr[i] == '+')
+	tot = 0;
+	while ((*nptr >= 9 && *nptr <= 13) || *nptr == 32)
+		nptr++;
+	if (*nptr == '-' || *nptr == '+')
 	{
-		if (nptr[i] == '-')
+		if (*nptr == '-')
 			sign *= -1;
-		i++;
+		nptr++;
 	}
-	while (nptr[i] >= '0' && nptr[i] <= '9')
+	while (*nptr >= '0' && *nptr <= '9')
 	{
-		total = (total * 10) + (nptr[i] - 48);
-		i++;
+		check = tot;
+		tot = (tot * 10) + (*nptr - 48);
+		if (tot / 10 != check && sign == 1)
+			return (-1);
+		else if (tot / 10 != check && sign == -1)
+			return (0);
+		nptr++;
 	}
-	return (total * sign);
+	return (tot * sign);
 }
