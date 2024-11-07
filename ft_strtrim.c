@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 19:03:11 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/31 19:15:43 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/07 15:18:20 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		j;
 	int		size_str;
 
-	if (!s1 || !set)
+	if (!s1)
 		return (NULL);
 	i = 0;
 	j = ft_strlen(s1) - 1;

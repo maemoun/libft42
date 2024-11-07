@@ -16,12 +16,15 @@ ${NAME}: ${OBJ}
 
 %.o:%.c libft.h
 		$(CC) -c $(CFLAGS) $< -o $@
+
+bonus: ${OBONUS}
+	ar rcs ${NAME} ${OBONUS}
 clean:
-		rm -rf ${OBJ}
+		rm -rf ${OBJ} ${OBONUS}
 
 fclean:
-		rm -rf ${NAME} ${OBJ}
+		rm -rf ${NAME} ${OBJ} ${OBONUS}
 
 re: fclear all
 
-.PHONY : all clean fclean re
+.PHONY : all bonus clean fclean re
