@@ -1,4 +1,4 @@
-CC = cc
+#CC = gcc
 CFLAGS = -Wall -Wextra -Werror 
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c \
 	  ft_atoi.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c \
@@ -9,10 +9,15 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen
 
 OBJ = ${SRC:.c=.o}
 NAME = libft.a
+
+BONUS = ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c ft_lstdelone_bonus.c \
+		*ft_lstlast_bonus.c *ft_lstnew_bonus.c ft_lstsize_bonus.c
+
+OBONUS = ${BONUS:.c=.o}
 all: ${NAME}
 
 ${NAME}: ${OBJ}
-		ar rcs ${NAME} ${OBJ}
+		ar  rcs ${NAME} ${OBJ}
 
 %.o:%.c libft.h
 		$(CC) -c $(CFLAGS) $< -o $@
@@ -22,9 +27,9 @@ bonus: ${OBONUS}
 clean:
 		rm -rf ${OBJ} ${OBONUS}
 
-fclean:
-		rm -rf ${NAME} ${OBJ} ${OBONUS}
+fclean: clean
+		rm -rf ${NAME}
 
-re: fclear all
+re: fclean all
 
-.PHONY : all bonus clean fclean re
+.PHONY : all bonus clean  re
