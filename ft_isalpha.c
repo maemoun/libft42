@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:00:44 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/27 10:36:37 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/17 09:29:25 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (c);
+		return (1);
 	return (0);
 }

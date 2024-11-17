@@ -6,13 +6,11 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 10:19:45 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/11/07 12:53:23 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/17 09:32:09 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 static int	ft_len(int n)
 {

@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 10:16:46 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/10/27 10:36:44 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/17 09:29:31 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-		return (c);
+		return (1);
 	return (0);
 }

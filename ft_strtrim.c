@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 19:03:11 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/11/07 15:18:20 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/17 09:52:51 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1)
 		return (NULL);
+	if (!set)
+		return(s1);
 	i = 0;
 	j = ft_strlen(s1) - 1;
 	while (s1[i] && ft_search(set, s1[i]))

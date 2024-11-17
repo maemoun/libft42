@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 11:17:13 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/11/07 11:23:30 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/17 09:11:45 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ t_list	*ft_lstnew(void *content)
 		return (NULL);
 	new->next = NULL;
 	new->content = content;
-	return (NULL);
+	return (new);
 }
