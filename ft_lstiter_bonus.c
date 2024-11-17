@@ -6,7 +6,7 @@
 /*   By: maeskhai <maeskhai@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 21:48:08 by maeskhai          #+#    #+#             */
-/*   Updated: 2024/11/11 09:47:24 by maeskhai         ###   ########.fr       */
+/*   Updated: 2024/11/17 16:13:18 by maeskhai         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 	{
 		while (lst)
 		{
-			f(list->content);
-			list = list->next;
+			f(lst->content);
+			lst = lst->next;
 		}
 	}
 }
