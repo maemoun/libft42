@@ -32,15 +32,24 @@ ___________________________________________________________________________
 
 🧩 Part 1: Standard Lib Functions :
 
-Function -------------------------- Purpose
-  * ft_strlen	 --------------> Length of string
-  * ft_memset	 --------------> Fill memory with a value
-  * ft_bzero	 --------------> Set memory to zero
-  * ft_memcpy	 --------------> Copy memory
-  * ft_memmove --------------> Safe memory copy (handles overlap)
-  * ft_strchr	 --------------> Find a character in a string
-  * ft_strncmp --------------> Compare strings
-  * ft_atoi	   --------------> Convert string to int
-  * ft_isalpha,ft_isdigit	---> Check character type
-  * ft_toupper,ft_tolower	---> Convert character case
+Function: ------------------------ Purpose:
+  * ft_strlen	---------------> Length of string.
+  * ft_memset ---------------> Fill memory with a value.
+  * ft_bzero ----------------> Set memory to zero.
+  * ft_memcpy ---------------> Copy memory.
+  * ft_memmove --------------> Safe memory copy (handles overlap).
+  * ft_strchr ---------------> Find a character in a string.
+  * ft_strncmp --------------> Compare strings.
+  * ft_atoi -----------------> Convert string to int.
+  * ft_isalpha,ft_isdigit	---> Check character type.
+  * ft_toupper,ft_tolower	---> Convert character case.
 
+🧩 Part 2: Extra Functions :
+
+Function: ----------------------	Purpose:
+ft_substr --------------> Extract substring from string.
+ft_strjoin -------------> Join two strings.
+ft_split ---------------> Split a string by a delimiter.
+ft_itoa ----------------> Convert int to string.
+ft_strmapi -------------> Apply a function to each character of a string.
+ft_strtrim -------------> Trim characters from start/end of string.
