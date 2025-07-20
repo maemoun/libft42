@@ -32,7 +32,6 @@ ___________________________________________________________________________
 
 🧩 Part 1: Standard Lib Functions :
 
-Function: ------------------------ Purpose:
   * ft_strlen	---------------> Length of string.
   * ft_memset ---------------> Fill memory with a value.
   * ft_bzero ----------------> Set memory to zero.
@@ -46,7 +45,6 @@ Function: ------------------------ Purpose:
 
 🧩 Part 2: Extra Functions :
 
-Function: ----------------------	Purpose:
  * ft_substr --------------> Extract substring from string.
  * ft_strjoin -------------> Join two strings.
  * ft_split ---------------> Split a string by a delimiter.
