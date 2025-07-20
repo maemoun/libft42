@@ -68,13 +68,12 @@ You implement your own linked list utilities:
 
 Functions:
 
-Function: --------------------------- Description:
-    * ft_lstnew ------------------> Create new node.
-    * ft_lstadd_front ------------> Add node at beginning.
-    * ft_lstsize -----------------> Count nodes.
-    * ft_lstlast -----------------> Get last node.
-    * ft_lstdelone,ft_lstclear ---> Free one/all nodes.
-    * ft_lstiter,ft_lstmap -------> Apply a function to each node.
+ * ft_lstnew ------------------> Create new node.
+ * ft_lstadd_front ------------> Add node at beginning.
+ * ft_lstsize -----------------> Count nodes.
+ * ft_lstlast -----------------> Get last node.
+ * ft_lstdelone,ft_lstclear ---> Free one/all nodes.
+ * ft_lstiter,ft_lstmap -------> Apply a function to each node.
 
 _____________________________________________________________________________
 ⚙️ How to Build Libft:
